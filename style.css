@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+/* --- Extra Column Padding -- */
+[class*="col-"] {
+    padding: 1rem;
+}
+  
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+  
+/*--- Landing Page Section --*/
+.landing {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    background-image: url(img/BayBridge.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: 0.75;
+}
+  
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999!important;
+}
+
+.fixed {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+body {
+      overflow-x: hidden;
+      font-family: 'Lato', sans-serif;
+      color: #505962;
+}
+
+  /*------Navigation Section------*/
+.navbar {
+    text-transform: uppercase;
+    /* font-weight:  */
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background-color: rgba(0,0,0,0.6)!important;
+}
+
+.navbar-brand img{
+    height: 2.3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    background-color: rgb(194, 104, 7);
+    color: white;
+    border-radius: 0.2rem;
+    opacity: 0.5;
+}
+/*------End Navigation Section */
+
+/*------Landing Page Section------*/
+#welcome{
+    height: 1.5rem;
+    font-family: 'Kavivanar', cursive;
+    color: rgb(194, 104, 7);
+    opacity: 0.5;
+}
+
+.caption {
+    width: 100%;
+    /* max-width: 100%; */
+    position: absolute;
+    top: 40%;
+    color: white;
+    z-index: 1;
+    text-shadow: 4px 4px 6px black, 0 0 25px blue, 0 0 8px darkblue;
+}
+/*------End Landing Page Section------*/
+
+/*------About Me Section------*/
+#about-page {
+    /* min-height:720px; */
+    margin-top: 8em;
+    min-height: 50vh;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+/*-------End About Me Section------ */
+
+/*------Memes Section*------*/
+#memeGenerator {
+    background-color: rgb(244, 242, 242);
+    min-height: 85vh;
+    padding-top: 7em;
+} 
+
+.form-inputs {
+    padding-top: 1rem;
+}
+
+form {
+    background-color: rgb(233, 233, 233);
+}
+
+label {
+    margin-right: 5em;
+    margin-top: .5em;
+}
+.meme-label {
+    margin-left:6em; */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn, .btn-primary {
+    background-color: rgb(194, 104, 7);
+}
+.add-meme-btn:hover{
+    transform: scale(1.3);
+    background-color: rgb(194, 104, 7);
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+.memes {
+    position: relative;
+} 
+
+.overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 92%;
+    width: 94.5%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(206, 206, 206);
+}
+
+.memes:hover .overlay {
+    opacity: 0.8;
+}
+
+.icon:hover .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fa-times{
+    color: rgb(194, 104, 7);
+    font-size: 200px;
+    position: absolute;
+    
+}
+
+#text-on-top{
+    position: absolute;
+    top: 3rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 4px 4px 6px black, 0 0 25px blue, 0 0 8px darkblue;
+}
+
+#text-on-bottom{
+    position: absolute;
+    bottom: 3rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 4px 4px 6px black, 0 0 25px blue, 0 0 8px darkblue;
+}
+/*------End Memes Section*------*/
+
+/*------Contact Section------*/
+#contact {
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+    background-image: url(img/WorldMap.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: 0.7;
+}
+
+.get-in-touch h1 {
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+ .get-in-touch p{
+    font-family: 'Kavivanar', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+} 
+
+.get-in-touch a {
+    color: rgb(194, 104, 7);
+    text-decoration: none;
+    font-weight: bold;
+}
+/*------End Contact Section/
+
+/*------Footer Section------*/
+.nav-home-about {
+    margin-top: 2rem;
+    list-style-type: none;
+    margin-right: 1rem;
+}
+.nav-home-about>li {
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+li>a{
+    color: rgb(194, 104, 7);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-contact:hover {
+    text-decoration:none;
+    color: rgb(194, 104, 7);
+}
+
+.social-icons a{
+    margin-right: 2rem;
+    font-size: 3rem;
+    color:rgba(0,0,0,0.6);
+}
+
+.copy-right {
+    margin-top: 2.5rem;
+}
+/*------End Footer------*/
+
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Timmana" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chao Ye</title>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <!-- Start Home -->
+   
+    <div id="home">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-page">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#memeGenerator">Meme Generator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+
+        <!-- Start Landing Page -->
+        <div class="landing">
+            
+        </div>
+        <div class="caption text-center">
+            <h1>Hi, I'm Chao!</h1>
+            <h3 id="welcome"></h3>
+        </div>
+        <!-- End Landing Page -->
+    </div>
+    <!-- End Home  -->
+
+    <!-- Start About -->
+    <div id="about-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="about-me section-heading">About Me</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p >I am a San Francisco native. As a kid, I was always intrigued by electronics. I would rip apart electronics laying around the house just to see how things functioned. This lead me to pursue an education in Electrical/Electronics Engineering. My background is in Logic Design, essentially computer engineering, but the hardware side of thigns.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>After college, I acquired a job as a Field Application engineer which allowed me to visit many interesting places across the country. This gave me the chance to visit many places out of California where I interacted with many of the locals and realized that how beautiful and vibrant home is.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>However, I was recently introduced to web development and fell in love. I feel as if I have already learned the hardware and the physics aspect of it and now shifting my curiousity towards the software applications of computers. </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start memeGenerator -->
+    <div id="memeGenerator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="section-heading">Meme Generator</h1>
+                    <p>Enter a URL to an image in the URL text input field, enter the top and bottom text in the text input fields. Then, click the "Add Meme" button to see what happens! </p>
+                </div>
+            </div>
+        
+            <form class="row text-center" id="form-input">
+                <div class=" form-inputs container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label class="meme-label" for="Image-url" id="url-img">Image URL:</label>
+                        </div>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="Image-url" placeholder="enter URL e.g. http://www.chaoye.com/chaoye.jpg">
+                        </div>
+                        <div class="col-lg-4">
+                            <label class="meme-label" for="top-text" id="text-top">Text On Top:</label>
+                        </div>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="meme-top-text" placeholder="Enter text that goes on top of meme.">
+                        </div>
+                    
+                        <div class="col-lg-4">
+                            <label class="meme-label" for="bottom-text" id="text-bottom">Text On Bottom:</label>
+                        </div>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="meme-bottom-text" placeholder="Enter text that goes on bottom of meme.">
+                        </div>
+                    </div>
+                    <div class="form-group" id="add-meme-button">
+                        <div class="col-lg-12 row justify-content-center align-items-center">
+                            <button type="button" class="btn btn-primary add-meme-btn" id="add-meme-click">Add Meme!</button>
+                        </div>
+                    </div>
+                </div>
+            </form>  
+            <!--Memes inserted into here-->
+            <div class="container">
+                <div class="row meme-output ">
+                    
+                </div>
+            </div>    
+        </div>                 
+    </div>
+    <!-- End memeGenerator -->
+    
+    <!-- Start Contact -->
+    <div id="contact">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-12 get-in-touch text-center">
+                <h1 class="contact-me-header">Contact Me</h1>
+                <div class="container">
+                    <p>If you would like to get in touch, feel free to email me at <strong><a href="mailto:chao12.ye@gmail.com">chao12DOTyeATgmailDOTCom</a></strong> or contact via one of the links below. If you would like a copy of my resume, please click -> <a href="Chao_Ye_Resume .pdf" download><i class="far fa-file-alt"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Begin Footer -->
+    <footer>
+        <div>
+            <div class="container h-100">
+                <div class="row text-center h-100 justify-content-center align-items-center">
+                    <div class="copy-right col-lg-3">
+                        <p>Copyright &copy; Chao Ye 2019</p>
+                    </div>
+                    <div class="col-lg-6 social-icons">
+                        <a href="https://github.com/cha0mein"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/chao-ye-973b1052"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://plus.google.com/102264463225334449811"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul class="nav-home-about">
+                            <li><a class="footer-contact" href="#home">Home</a> </li>
+                            <li><a class="footer-contact" href="#about-page">About</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- Script Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./JavaScript/welcome.js"></script>
+    <script type="text/javascript" src="./JavaScript/meme.js"></script>
+    <!-- End Script Files -->
+    </html>
+</body>
