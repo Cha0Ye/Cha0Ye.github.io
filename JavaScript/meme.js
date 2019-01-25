@@ -52,8 +52,8 @@ function createMeme() {
 
     //add attributes to image
     memeImage.src = imageURL;
-    memeImage.width = "508";
-    memeImage.height = "338.66";
+    // memeImage.width = "508";
+    // memeImage.height = "338.66";
    
 
     //add ID to top and bottom text divisions
